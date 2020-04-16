@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="./static/style.css"/>
+
+<title>Javascript Games</title>
+</head>
+<body>
+    <div class="page-wrapper__one">
+
+        <div class="game-wrapper age">
+            <h2 class="game-title age-in-days">Age In Days</h2>
+            <div class="btn-wrapper">
+                <button class="btn btn-primary age-btn">Click Me</button>
+                <button class="btn btn-danger age-reset">Reset</button>
+            </div>
+            <div class="age-result"></div>
+        </div>
+
+        <div class="dog-generator game-wrapper">
+            <h2 class="dog-generator__title">Dog Generator</h2>
+            <button class="dog-generator__btn btn btn-success" onclick="generateDog()">Generate Dog</button>
+            <div class="dog-generator__img-container"></div>
+        </div>
+
+        <div class="rps game-wrapper">
+            <h2 class="rps__title">Rock, Paper, Scissors</h2>
+            <div class="rps__choices">
+                <a onclick="rpsPlay(this)" id="rock"><img src="static/images/rps/rock.png"/></a>
+                <a onclick="rpsPlay(this)" id="paper"><img src="static/images/rps/paper.png" /></a>
+                <a onclick="rpsPlay(this)" id="scissors"><img src="static/images/rps/scissors.png"/></a>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

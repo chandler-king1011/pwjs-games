@@ -1,0 +1,72 @@
+.page-wrapper__one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page-wrapper__one > .game-wrapper {
+    margin-top: 100px;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-wrapper__one > .dog-generator > .dog-generator__img-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.page-wrapper__one > .dog-generator > .dog-generator__title {
+    text-align: center;
+}
+.page-wrapper__one > .dog-generator > .dog-generator__btn {
+    justify-self: center;
+}
+.page-wrapper__one > .dog-generator > .dog-generator__img-container img {
+    width: 250px;
+    padding: 10px;
+}
+
+.page-wrapper__one > .rps > .rps__choices {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.page-wrapper__one > .rps > .rps__choices > a {
+    transition: 0.2s ease-in-out;
+}
+
+.page-wrapper__one > .rps > .rps__choices > a:hover {
+    box-shadow: 6px 6px 25px 5px rgba(49,99,224,1);
+}
+
+.page-wrapper__one > .rps > .rps__choices > a > img {
+    width: 150px;
+    height: 150px;
+}
+
+.page-wrapper__one > .rps > .rps__choices > img {
+    width: 150px;
+    height: 150px;
+}
+
+.page-wrapper__one > .rps > .rps__choices > .user-choice__img {
+    box-shadow: 6px 6px 25px 5px rgba(49,99,224,1);
+}
+.page-wrapper__one > .rps > .rps__choices > .computer-choice__img {
+    box-shadow: 6px 6px 25px 5px rgba(240,3,23,1);
+}
+
+.page-wrapper__one > .rps > .rps__choices > .rps__result-win {
+    color: #28a745;
+}
+.page-wrapper__one > .rps > .rps__choices > .rps__result-lose {
+    color: rgba(240,3,23,1);
+}
+.page-wrapper__one > .rps > .rps__choices > .rps__result-tie {
+    color: gold;
+}
