@@ -13,15 +13,15 @@
         <div class="game-wrapper age">
             <h2 class="game-title age-in-days">Age In Days</h2>
             <div class="btn-wrapper">
-                <button class="btn btn-primary age-btn">Click Me</button>
-                <button class="btn btn-danger age-reset">Reset</button>
+                <button id="primary" class="btn btn-primary age-btn">Click Me</button>
+                <button id="danger" class="btn btn-danger age-reset">Reset</button>
             </div>
             <div class="age-result"></div>
         </div>
 
         <div class="dog-generator game-wrapper">
             <h2 class="dog-generator__title">Dog Generator</h2>
-            <button class="dog-generator__btn btn btn-success" onclick="generateDog()">Generate Dog</button>
+            <button id="success" class="dog-generator__btn btn btn-success" onclick="generateDog()">Generate Dog</button>
             <div class="dog-generator__img-container"></div>
         </div>
 
@@ -32,6 +32,23 @@
                 <a onclick="rpsPlay(this)" id="paper"><img src="static/images/rps/paper.png" /></a>
                 <a onclick="rpsPlay(this)" id="scissors"><img src="static/images/rps/scissors.png"/></a>
             </div>
+        </div>
+
+        <div class="button-colors">
+            <h2 class="button-colors__title">Change the Color of All Buttons</h2>
+            <div class="button-colors__button-wrapper">
+                <select onchange="changeButtonColors(this.value)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+                <button id="primary" class="btn btn-primary">Wee!</button>
+                <button id="danger" class="btn btn-danger">Yahoo!</button>
+                <button id="warning" class="btn btn-warning">Google!</button>
+                <button id="success" class="btn btn-success">Facebook!</button>
+            </div>
+
         </div>
 
 

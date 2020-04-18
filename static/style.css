@@ -70,3 +70,13 @@
 .page-wrapper__one > .rps > .rps__choices > .rps__result-tie {
     color: gold;
 }
+
+
+
+.button-colors {
+    margin-top: 100px;
+}
+.button-colors > .button-colors__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+}

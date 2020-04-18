@@ -98,3 +98,74 @@ const rpsPlay = (choice) => {
         <img src="static/images/rps/${computerChoice}.png" class="computer-choice__img"/>
      `;
 }
+
+
+// Change Button Colors
+
+const selectRandomColor = () => {
+    const colorOptions = ["btn-warning", "btn-danger", "btn-success", "btn-primary"];
+    const colorChoice = (Math.floor(randomNum(0, 4)));
+    return colorOptions[colorChoice];
+    
+}
+
+const resetColors = (btns) => {
+    btns.forEach(btn => {
+        switch(btn.id) {
+            case "success":
+                btn.classList = "";
+                btn.classList.add("btn");
+                btn.classList.add("btn-success");
+                break;
+            case "warning":
+                btn.classList = "";
+                btn.classList.add("btn");
+                btn.classList.add("btn-warning");
+                break;
+            case "danger":
+                btn.classList = "";
+                btn.classList.add("btn");
+                btn.classList.add("btn-danger");
+                break;
+            case "primary":
+                btn.classList = "";
+                btn.classList.add("btn");
+                btn.classList.add("btn-primary");
+                break;
+    
+
+        }
+    })
+}
+
+const changeButtonColors = (value) => {
+    const btns = document.querySelectorAll(".btn");
+    switch(value) {
+        case "random":
+            btns.forEach(btn => {
+                btn.classList = "";
+                btn.classList.add("btn");
+                btn.classList.add(selectRandomColor());
+            });
+            break;
+        case "reset":
+            resetColors(btns);
+            break;
+        case "red":
+            btns.forEach(btn => {
+                btn.classList = "";
+                btn.classList.add("btn");
+                btn.classList.add("btn-danger");
+            });
+            break;
+        case "green":
+            btns.forEach(btn => {
+                btn.classList = "";
+                btn.classList.add("btn");
+                btn.classList.add("btn-success");
+            });
+            break;
+
+    }
+
+}
